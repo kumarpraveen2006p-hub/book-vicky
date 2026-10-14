@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Work From Home Jobs</title>
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- CSS Style -->
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background-color: #0d0d0d;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        /* Outer Card Box */
+        .card-container {
+            background-color: #121212;
+            border: 3px solid #facc15;
+            box-shadow: 0 0 25px rgba(250, 204, 21, 0.4);
+            border-radius: 24px;
+            width: 100%;
+            max-width: 420px;
+            padding: 30px 20px;
+            text-align: center;
+            color: #ffffff;
+            position: relative;
+            overflow: hidden;
+        }
+
+        /* Logo Styling */
+        .logo-box {
+            background-color: #ffffff;
+            width: 180px;
+            height: 180px;
+            margin: 0 auto 20px auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 8px;
+        }
+
+        .circle-logo {
+            background-color: #facc15;
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: #000000;
+            font-weight: 800;
+            line-height: 1.1;
+        }
+
+        .logo-title {
+            font-size: 16px;
+            text-transform: lowercase;
+        }
+
+        .logo-main {
+            font-size: 28px;
+            text-transform: lowercase;
+            font-weight: 900;
+        }
+
+        .logo-sub {
+            font-size: 22px;
+            text-transform: lowercase;
+        }
+
+        .logo-tiny {
+            font-size: 8px;
+            margin-top: 4px;
+            font-weight: 600;
+        }
+
+        /* Headings */
+        .main-heading {
+            color: #ffffff;
+            font-size: 20px;
+            font-weight: 800;
+            letter-spacing: 0.5px;
+            margin-bottom: 8px;
+        }
+
+        .star {
+            color: #facc15;
+        }
+
+        .sub-heading {
+            color: #facc15;
+            font-size: 14px;
+            font-weight: 700;
+            letter-spacing: 0.8px;
+            margin-bottom: 20px;
+        }
+
+        /* Badges and Buttons */
+        .badge-female {
+            background-color: #facc15;
+            color: #000000;
+            font-weight: 800;
+            font-size: 15px;
+            padding: 8px 20px;
+            border-radius: 50px;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            margin-bottom: 15px;
+        }
+
+        .telegram-btn {
+            background-color: #facc15;
+            color: #000000;
+            text-decoration: none;
+            font-weight: 800;
+            font-size: 18px;
+            padding: 12px 20px;
+            border-radius: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 25px;
+            transition: transform 0.2s ease, background-color 0.2s ease;
+            cursor: pointer;
+            border: none;
+            width: 100%;
+        }
+
+        .telegram-btn:hover {
+            transform: scale(1.03);
+            background-color: #ffd700;
+        }
+
+        .telegram-icon {
+            font-size: 18px;
+            transform: rotate(-20deg);
+        }
+
+        /* Features List */
+        .features-list {
+            list-style: none;
+            text-align: left;
+            max-width: 340px;
+            margin: 0 auto 25px auto;
+        }
+
+        .features-list li {
+            font-size: 13px;
+            font-weight: 700;
+            margin-bottom: 12px;
+            display: flex;
+            align-items: center;
+            letter-spacing: 0.5px;
+        }
+
+        .features-list span {
+            margin-right: 10px;
+            font-size: 16px;
+        }
+
+        /* Join Now Footer */
+        .join-now {
+            font-size: 26px;
+            font-weight: 900;
+            letter-spacing: 1px;
+            color: #ffffff;
+            text-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+            cursor: pointer;
+            transition: color 0.2s ease;
+        }
+
+        .join-now:hover {
+            color: #facc15;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="card-container">
+        <!-- Top Logo -->
+        <div class="logo-box">
+            <div class="circle-logo">
+                <span class="logo-title">work from</span>
+                <span class="logo-main">home</span>
+                <span class="logo-sub">jobs</span>
+                <span class="logo-tiny">Online Jobs</span>
+            </div>
+        </div>
+
+        <!-- Main Heading -->
+        <h1 class="main-heading">
+            <span class="star">&#9733;</span> WORK FROM HOME JOBS <span class="star">&#9733;</span>
+        </h1>
+
+        <p class="sub-heading">INDIA'S ONLINE JOBS COMMUNITY &#128640;</p>
+
+        <!-- Only for Female Badge -->
+        <div class="badge-female">
+            <span class="icon">&#128105;</span>
+            <span>ONLY FOR FEMALE</span>
+            <span class="icon">&#128105;</span>
+        </div>
+
+        <!-- Telegram Button with JS Click Event -->
+        <button class="telegram-btn" id="telegramBtn">
+            <span class="telegram-icon">&#10148;</span>
+            <span>Join Telegram Channel</span>
+            <span class="telegram-icon">&#10148;</span>
+        </button>
+
+        <!-- Features List -->
+        <ul class="features-list">
+            <li><span class="check-icon">&#9989;</span> GENUINE & VERIFIED JOBS</li>
+            <li><span class="briefcase-icon">&#128092;</span> DAILY NEW JOB UPDATES</li>
+            <li><span class="money-icon">&#128181;</span> FLEXIBLE INCOME OPPORTUNITIES</li>
+            <li><span class="clock-icon">&#10071;</span> PART-TIME / FULL-TIME AVAILABLE</li>
+        </ul>
+
+        <!-- Bottom Call to Action -->
+        <div class="join-now" id="joinNowText">
+            JOIN NOW !!
+        </div>
+    </div>
+
+    <!-- JavaScript Script -->
+    <script>
+        // Button click par alert ya redirection ke liye JavaScript
+        const telegramBtn = document.getElementById('telegramBtn');
+        const joinNowText = document.getElementById('joinNowText');
+
+        telegramBtn.addEventListener('click', function() {
+            // Aap yahan apna Telegram link daal sakte hain (e.g., window.location.href = "https://t.me/your_channel")
+            alert("Redirecting to Telegram Channel...");
+        });
+
+        joinNowText.addEventListener('click', function() {
+            alert("Thank you for your interest! Click on 'Join Telegram Channel' to proceed.");
+        });
+
+        // Console log message
+        console.log("Work From Home Jobs Landing Page Loaded Successfully!");
+    </script>
+</body>
+</html>
