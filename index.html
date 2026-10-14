@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Work From Home Jobs</title>
+
     <!-- Google Font -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
-    
-    <!-- CSS Style -->
+
     <style>
         * {
             margin: 0;
@@ -25,7 +25,6 @@
             padding: 20px;
         }
 
-        /* Outer Card Box */
         .card-container {
             background-color: #121212;
             border: 3px solid #facc15;
@@ -40,7 +39,6 @@
             overflow: hidden;
         }
 
-        /* Logo Styling */
         .logo-box {
             background-color: #ffffff;
             width: 180px;
@@ -88,7 +86,6 @@
             font-weight: 600;
         }
 
-        /* Headings */
         .main-heading {
             color: #ffffff;
             font-size: 20px;
@@ -109,7 +106,6 @@
             margin-bottom: 20px;
         }
 
-        /* Badges and Buttons */
         .badge-female {
             background-color: #facc15;
             color: #000000;
@@ -152,7 +148,6 @@
             transform: rotate(-20deg);
         }
 
-        /* Features List */
         .features-list {
             list-style: none;
             text-align: left;
@@ -174,7 +169,6 @@
             font-size: 16px;
         }
 
-        /* Join Now Footer */
         .join-now {
             font-size: 26px;
             font-weight: 900;
@@ -190,9 +184,11 @@
         }
     </style>
 </head>
+
 <body>
 
     <div class="card-container">
+
         <!-- Top Logo -->
         <div class="logo-box">
             <div class="circle-logo">
@@ -205,56 +201,82 @@
 
         <!-- Main Heading -->
         <h1 class="main-heading">
-            <span class="star">&#9733;</span> WORK FROM HOME JOBS <span class="star">&#9733;</span>
+            <span class="star">★</span>
+            WORK FROM HOME JOBS
+            <span class="star">★</span>
         </h1>
 
-        <p class="sub-heading">INDIA'S ONLINE JOBS COMMUNITY &#128640;</p>
+        <p class="sub-heading">
+            INDIA'S ONLINE JOBS COMMUNITY 🚀
+        </p>
 
         <!-- Only for Female Badge -->
         <div class="badge-female">
-            <span class="icon">&#128105;</span>
+            <span>👩</span>
             <span>ONLY FOR FEMALE</span>
-            <span class="icon">&#128105;</span>
+            <span>👩</span>
         </div>
 
-        <!-- Telegram Button with JS Click Event -->
+        <!-- Telegram Button -->
         <button class="telegram-btn" id="telegramBtn">
-            <span class="telegram-icon">&#10148;</span>
+            <span class="telegram-icon">➤</span>
             <span>Join Telegram Channel</span>
-            <span class="telegram-icon">&#10148;</span>
+            <span class="telegram-icon">➤</span>
         </button>
 
         <!-- Features List -->
         <ul class="features-list">
-            <li><span class="check-icon">&#9989;</span> GENUINE & VERIFIED JOBS</li>
-            <li><span class="briefcase-icon">&#128092;</span> DAILY NEW JOB UPDATES</li>
-            <li><span class="money-icon">&#128181;</span> FLEXIBLE INCOME OPPORTUNITIES</li>
-            <li><span class="clock-icon">&#10071;</span> PART-TIME / FULL-TIME AVAILABLE</li>
+            <li>
+                <span>✅</span>
+                GENUINE & VERIFIED JOBS
+            </li>
+
+            <li>
+                <span>💼</span>
+                DAILY NEW JOB UPDATES
+            </li>
+
+            <li>
+                <span>💰</span>
+                FLEXIBLE INCOME OPPORTUNITIES
+            </li>
+
+            <li>
+                <span>❗</span>
+                PART-TIME / FULL-TIME AVAILABLE
+            </li>
         </ul>
 
         <!-- Bottom Call to Action -->
         <div class="join-now" id="joinNowText">
             JOIN NOW !!
         </div>
+
     </div>
 
-    <!-- JavaScript Script -->
+    <!-- JavaScript -->
     <script>
-        // Button click par alert ya redirection ke liye JavaScript
-        const telegramBtn = document.getElementById('telegramBtn');
-        const joinNowText = document.getElementById('joinNowText');
 
-        telegramBtn.addEventListener('click', function() {
-            // Aap yahan apna Telegram link daal sakte hain (e.g., window.location.href = "https://t.me/your_channel")
-            alert("Redirecting to Telegram Channel...");
+        // Your Telegram Channel Link
+        const telegramLink = "https://t.me/+JEAbKFPtv9QxMmRl";
+
+        // Telegram Button Click
+        const telegramBtn = document.getElementById("telegramBtn");
+
+        telegramBtn.addEventListener("click", function () {
+            window.open(telegramLink, "_blank");
         });
 
-        joinNowText.addEventListener('click', function() {
-            alert("Thank you for your interest! Click on 'Join Telegram Channel' to proceed.");
+        // JOIN NOW Click
+        const joinNowText = document.getElementById("joinNowText");
+
+        joinNowText.addEventListener("click", function () {
+            window.open(telegramLink, "_blank");
         });
 
-        // Console log message
         console.log("Work From Home Jobs Landing Page Loaded Successfully!");
+
     </script>
+
 </body>
 </html>
