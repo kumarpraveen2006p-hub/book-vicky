@@ -8,7 +8,47 @@
     <!-- Google Font -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
 
+    <!-- Meta Pixel Code -->
+    <script>
+    !function(f,b,e,v,n,t,s)
+    {
+        if(f.fbq)return;
+        n=f.fbq=function(){
+            n.callMethod ?
+            n.callMethod.apply(n,arguments) : n.queue.push(arguments)
+        };
+
+        if(!f._fbq)f._fbq=n;
+
+        n.push=n;
+        n.loaded=!0;
+        n.version='2.0';
+        n.queue=[];
+
+        t=b.createElement(e);
+        t.async=!0;
+        t.src=v;
+
+        s=b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t,s)
+    }(window, document, 'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+
+    fbq('init', '2177286749567580');
+    fbq('track', 'PageView');
+    </script>
+
+    <noscript>
+        <img height="1"
+             width="1"
+             style="display:none"
+             src="https://www.facebook.com/tr?id=2177286749567580&ev=PageView&noscript=1"
+        />
+    </noscript>
+    <!-- End Meta Pixel Code -->
+
     <style>
+
         * {
             margin: 0;
             padding: 0;
@@ -182,6 +222,7 @@
         .join-now:hover {
             color: #facc15;
         }
+
     </style>
 </head>
 
@@ -191,44 +232,86 @@
 
         <!-- Top Logo -->
         <div class="logo-box">
+
             <div class="circle-logo">
-                <span class="logo-title">work from</span>
-                <span class="logo-main">home</span>
-                <span class="logo-sub">jobs</span>
-                <span class="logo-tiny">Online Jobs</span>
+
+                <span class="logo-title">
+                    work from
+                </span>
+
+                <span class="logo-main">
+                    home
+                </span>
+
+                <span class="logo-sub">
+                    jobs
+                </span>
+
+                <span class="logo-tiny">
+                    Online Jobs
+                </span>
+
             </div>
+
         </div>
+
 
         <!-- Main Heading -->
         <h1 class="main-heading">
+
             <span class="star">★</span>
+
             WORK FROM HOME JOBS
+
             <span class="star">★</span>
+
         </h1>
 
+
+        <!-- Sub Heading -->
         <p class="sub-heading">
             INDIA'S ONLINE JOBS COMMUNITY 🚀
         </p>
 
-        <!-- Only for Female Badge -->
+
+        <!-- Only For Female -->
         <div class="badge-female">
+
             <span>👩</span>
-            <span>ONLY FOR FEMALE</span>
+
+            <span>
+                ONLY FOR FEMALE
+            </span>
+
             <span>👩</span>
+
         </div>
+
 
         <!-- Telegram Button -->
         <button class="telegram-btn" id="telegramBtn">
-            <span class="telegram-icon">➤</span>
-            <span>Join Telegram Channel</span>
-            <span class="telegram-icon">➤</span>
+
+            <span class="telegram-icon">
+                ➤
+            </span>
+
+            <span>
+                Join Telegram Channel
+            </span>
+
+            <span class="telegram-icon">
+                ➤
+            </span>
+
         </button>
 
-        <!-- Features List -->
+
+        <!-- Features -->
         <ul class="features-list">
+
             <li>
                 <span>✅</span>
-                GENUINE & VERIFIED JOBS
+                GENUINE &amp; VERIFIED JOBS
             </li>
 
             <li>
@@ -245,36 +328,80 @@
                 <span>❗</span>
                 PART-TIME / FULL-TIME AVAILABLE
             </li>
+
         </ul>
 
-        <!-- Bottom Call to Action -->
+
+        <!-- Bottom CTA -->
         <div class="join-now" id="joinNowText">
+
             JOIN NOW !!
+
         </div>
 
     </div>
 
+
     <!-- JavaScript -->
     <script>
 
-        // Your Telegram Channel Link
-        const telegramLink = "https://t.me/+JEAbKFPtv9QxMmRl";
+        // ==========================================
+        // TELEGRAM CHANNEL LINK
+        // ==========================================
 
-        // Telegram Button Click
-        const telegramBtn = document.getElementById("telegramBtn");
+        const telegramLink =
+            "https://t.me/+JEAbKFPtv9QxMmRl";
+
+
+        // ==========================================
+        // TELEGRAM BUTTON
+        // ==========================================
+
+        const telegramBtn =
+            document.getElementById("telegramBtn");
+
 
         telegramBtn.addEventListener("click", function () {
+
+            // Meta Pixel Event
+            fbq('track', 'Lead');
+
+            // Open Telegram
             window.open(telegramLink, "_blank");
+
         });
 
-        // JOIN NOW Click
-        const joinNowText = document.getElementById("joinNowText");
+
+        // ==========================================
+        // JOIN NOW BUTTON
+        // ==========================================
+
+        const joinNowText =
+            document.getElementById("joinNowText");
+
 
         joinNowText.addEventListener("click", function () {
+
+            // Meta Pixel Event
+            fbq('track', 'Lead');
+
+            // Open Telegram
             window.open(telegramLink, "_blank");
+
         });
 
-        console.log("Work From Home Jobs Landing Page Loaded Successfully!");
+
+        // ==========================================
+        // PAGE LOAD MESSAGE
+        // ==========================================
+
+        console.log(
+            "Work From Home Jobs Landing Page Loaded Successfully!"
+        );
+
+        console.log(
+            "Meta Pixel ID: 2177286749567580"
+        );
 
     </script>
 
